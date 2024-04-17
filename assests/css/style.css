@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    /* box-shadow: 0px 8px 24px 0px rgba(111, 117, 124, 0.2); */
+    background-color: #fff;
+    z-index: 10;
+}
+
+
+/* start header section */
+.header-title{
+    font-weight: lighter;
+    font-size: 3em;
+}
+
+.header-content{
+    letter-spacing: 3px;
+}
+/* end header section */
+/* start about section */
+.about-content{
+    text-align: justify;
+}
+/* end about section */
+/* start projects section */
+.card{
+    height: 450px;
+}
+
+.card img{
+    height: 300px;
+}
+/* end projects section */
+/* start footer section */
+.copyright{
+    font-size: 12px;
+    font-style: italic;
+}
+/* end footer section */
+
+
+/* start animation */
+@keyframes header-ani {
+    from{
+        top: -500px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.header{
+    position: relative;
+    animation-name: header-ani;
+    animation-duration: 1.5s;
+}
+/* end animation */
+
+
+/* responsive */
+/* start header section */
+
+@media screen and (max-width: 580px){
+    .header{
+        margin-top: 20px;
+    }
+
+    .header-title,.header-content,.header-job-title{
+        text-align: center;
+    }
+
+    .download-btn{
+        margin-left: 30%;
+    }
+
+    .footer-content{
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* end header section */
+
